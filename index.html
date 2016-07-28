@@ -7,9 +7,80 @@
   <body>
 
     <script type="text/javascript">
+// dont forget psudo code, and console.log()s
 
-    // dont forget comments, and console.log()s
-      
+var userName = prompt('Let\'s get to know each other! What\'s your name?');
+console.log('userName = ' + userName);
+
+alert('Nice to meet\'cha ' + userName + '! Let\'s play a quick game, shall we?');
+
+var questionOne = prompt('Do you think I love animals?').toUpperCase();
+  console.log('questionOne = ' + questionOne);
+  if(questionOne === 'Y') {
+    console.log('First if')
+    alert('You got it '+ userName + '! I own two dogs, one cat, and a hedghog!')
+} else {
+    console.log('First else')
+    alert('Turns out, I love just about every animal on this planet. Even spiders, spiders are cool just so long as they aren\'t on me')
+}
+var questionTwo = prompt('Do you think I like bungie jumping?').toUpperCase();
+  console.log('questionTwo = ' + questionTwo);
+  if(questionTwo === 'N'){
+    alert('You\'re right, I have acrophobia!')
+} else {
+    alert('Well, ' + userName +' as you get to know me, you\'ll start to understand that my fear of hieghts prevents me from even considering crazy things like bungie jumping.')
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* guessing game format;
+
+var questionOne= prompt ('');
+      questionOne = questionOne.toUpperCase();
+      console.log('this is the first value of questionOne ' + questionOne)
+
+        if(questionOne === 'Y'){
+          console.log('This is the if')
+          alert('' + userName + '');
+        } else {
+          console.log('this is the else')
+          alert ('' + userName + '');
+        }; */
+
+
+
+
+
+
+      //Goals
+      //1. Create personal guessing game. 3 or more Y/N questions.
+          //a.
+          //b.
+          //c.
+      //2. Create Bio/resume.
+          //bio facts
+            //a. Hobbies?
+            //b. Family?
+            //c. Other intreastes?
+          //resume
+            //volunteer service
+            //job experience
+            //education
     </script>
   </body>
 </html>
