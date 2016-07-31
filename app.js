@@ -1,4 +1,5 @@
 /*Note to self, Fix all spelling errors!*/
+
 var userName = prompt('Let\'s get to know each other! What\'s your name?');
 console.log('userName = ' + userName);
 
@@ -6,7 +7,7 @@ alert('Nice to meet\'cha ' + userName + '! Before you dig into my webpage, let\'
 
 var questionOne = prompt('Do you think I love animals?').toUpperCase();
 console.log('questionOne = ' + questionOne);
-if(questionOne === 'Y') {
+if(questionOne === 'Y' || questionOne === 'YES') {
   console.log('First if');
   alert('You got it ' + userName + '! I take care of several diffrent animals at home!');
 } else {
@@ -15,7 +16,7 @@ if(questionOne === 'Y') {
 }
 var questionTwo = prompt('Do you think I like bungie jumping?').toUpperCase();
 console.log('questionTwo = ' + questionTwo);
-if(questionTwo === 'N') {
+if(questionTwo === 'N' || questionTwo === 'NO') {
   console.log('Second if');
   alert('You\'re right, I have acrophobia\(fear of heights\)!');
 } else {
@@ -24,7 +25,7 @@ if(questionTwo === 'N') {
 }
 var questionThree = prompt('Is there a better video game than "Zelda: Ocarina of Time?"').toUpperCase();
 console.log('questionThree = ' + questionThree);
-if (questionThree === 'N') {
+if (questionThree === 'N' || questionThree === 'YES') {
   console.log('Third if');
   alert('Glad to see we agree. Just thinking about that game, makes me want to play it.');
 }else{
@@ -33,19 +34,22 @@ if (questionThree === 'N') {
 }
 var questionFour = prompt('Is pie better than cake?').toUpperCase();
 console.log('questionFour = ' + questionFour);
-if (questionFour === 'Y'){
+if (questionFour === 'Y' || questionFour === 'YES'){
   console.log('Fourth if');
   alert('I think we can be friends! After all, pie is the holy grail of desserts');
 }else{
   console.log('Fourth else');
   alert('Oh, No. You\'re very wrong. Very wrong indeed. Nothing beats pie, cake is a lie!');
 }
-var questionFive = prompt('Do you think I\'m afraid of sharks?').toUpperCase();
+var questionFive = prompt('What sea animals do you think I fear?').toUpperCase();
 console.log('questionFive = ' + questionFive);
-if(questionFive === 'N' || questionFive === 'NO'){
+if(questionFive === 'DOLPHIN' || questionFive === 'WHALE' || questionFive === 'PORPOISES' || questionFive === 'SNAKES' || questionFive === 'LION FISH'){
   console.log ('Fith if');
-  alert('You\'re right. Sharks are actually very misunderstood creatures. Most shark "Attacks" are a case of mistaken identity.');
-} else{
+  alert('You\'re right. Those things freak me out!');
+} else if (questionFive === 'SHARKS'){
+  console.log ('First if else');
+  alert('Sharks are so misunderstood! I really want to spread awareness, sharks don\'t want to harm people. Most shark attacks are a case of mistaken identity');
+} else {
   console.log('Fith else');
   alert('Belive it or not, I have no fear of sharks. I\'ve dove with them several times. I\'m actually way more afraid of porpoises.');
 }
