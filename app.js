@@ -21,7 +21,7 @@ if(questionTwo === 'N') {
   console.log('Second else');
   alert('Well, ' + userName + ' as you get to know me, you\'ll start to understand that my fear of hieghts prevents me from even considering crazy things like bungie jumping.');
 }
-var questionThree = prompt('Is there a better video game than \"Zelda: Ocarina of Time?\"').toUpperCase();
+var questionThree = prompt('Is there a better video game than "Zelda: Ocarina of Time?"').toUpperCase();
 console.log('questionThree = ' + questionThree);
 if (questionThree === 'N') {
   console.log('Third if');
@@ -57,4 +57,6 @@ var questionOne= prompt ('');
         } else {
           console.log('this is the else')
           alert ('' + userName + '');
-        }; */
+        };
+
+*/
