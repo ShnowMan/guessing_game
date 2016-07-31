@@ -39,6 +39,14 @@ if (questionFour === 'Y'){
   console.log('Fourth else');
   alert('Oh, No. You\'re very wrong. Very wrong indeed. Nothing beats pie, cake is a lie!');
 }
+var questionFive = prompt ('Do you think I\'m afraid of sharks?').toUpperCase();
+  console.log('questionFive = ' + questionFive)
+  if(questionFive === 'N' || questionFive === 'NO'){
+  console.log ('Fith if')
+  alert('You\'re right. Sharks are actually very misunderstood creatures. Most shark "Attacks" are a case of mistaken identity.');
+} else{
+console.log('Fith else')
+alert('Belive it or not, I have no fear of sharks. I\'ve dove with them several times. I\'m actually way more afraid of porpoises.');
 alert('Welp, thats all ' + userName + ', thanks for playing! I hope you leanred something aobut me.');
 console.log('Full javascript was sucessfull');
 
@@ -58,5 +66,4 @@ var questionOne= prompt ('');
           console.log('this is the else')
           alert ('' + userName + '');
         };
-
-*/
+        */

@@ -44,7 +44,8 @@
 
 
 
-<!-- Goals Lab 1
+<!--
+      Goals Lab 1
   1. Create personal guessing game. 4 Y/N questions.
       a. Animals
       b. Fear
@@ -59,11 +60,17 @@
         volunteer service
         job experience
         education
--->
-<!--  Goals Lab 2
+
+        Goals Lab 2
   1. Add Question 5
     *One of these questions should include the use of logical operators (refer to page ~157 of the JS text book for example usage). As a secondary example, one of your questions can validate use input in the form of 'Yes' and 'Y', or 'No' and 'N'.
-
+    * var questionFive = prompt ('Do you think I'm afraid of sharks?').toUpperCase();
+      console.log('questionFive = ' + questionFive)
+      if(questionFive === 'N' || questionFive === 'NO'){
+      alert('You\'re right. Sharks are actually very misunderstood creatures. Most shark "Attacks" are a case of mistaken identity.);
+    } else{
+    alert(Belive it or not, I have no fear of sharks. I've dove with them several time. I\'m actually way more afraid of porpoises.)
+  }
   2. Add Question 6
     *One of the questions should include multiple answers (more than two). These answers can be stored in an array, and you will want to use the array method indexOf() to find out whether the user's guess exists in the array or not. If it does, use the index returned to you to select that value and tell the user that they guessed the answer correct.
 
