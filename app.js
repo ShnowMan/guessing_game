@@ -23,7 +23,7 @@ if(questionTwo === 'N' || questionTwo === 'NO') {
 }
 var questionThree = prompt('Is there a better video game than "Zelda: Ocarina of Time?"').toUpperCase();
 console.log('questionThree = ' + questionThree);
-if (questionThree === 'N' || questionThree === 'YES') {
+if (questionThree === 'N' || questionThree === 'NO') {
   console.log('Third if');
   alert('Glad to see we agree. Just thinking about that game, makes me want to play it.');
 }else{
