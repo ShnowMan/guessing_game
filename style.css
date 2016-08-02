@@ -23,6 +23,7 @@ p {
   margin: auto;
   padding: 10px;
   width: 450px;
+  text-align:left;
 }
 .pics{
   background-color: transparent;
