@@ -63,23 +63,40 @@ if (jeffTopAnimals.indexOf(questionSix) === -1) {
   console.log ('answerToSix = ' + answerToSix);
   alert('Great guess, ' + jeffTopAnimals[answerToSix] + ' is in my top five!' );
 }
+var questionSeven = parseInt(prompt('My dog Callie at home is getting pretty old for a cocker spaniel. Can you guess how old she is?'));
+console.log('questionSeven = ' + questionSeven);
+while(questionSeven !== 17){
+  if (isNaN(questionSeven)){
+    questionSeven = parseInt(prompt('Please use numbers 0-9'));
+  }else if (questionSeven < 17 ) {
+    questionSeven = parseInt(prompt('Older than that, she\'s older than most highschoolers!'));
+  }else if (questionSeven > 17 ) {
+    questionSeven = parseInt(prompt('I really hope she lives that long, but she isn\'t there yet.'));
+  }
+}
+alert('You got it! 17 is pretty old for a puppy don\'t you think?');
 alert('Welp, thats all ' + userName + ', thanks for playing! I hope you leanred something aobut me.');
 console.log('Full javascript was sucessfull');
 
 
 //don't forget pseduo code/console.log()
+// var questionSeven = parseInt(prompt('My dog Callie at home is getting pretty old for a cocker spaniel. Can you guess how old she is?'));
+// console.log('questionSeven = ' + questionSeven);
+// while(questionSeven !== 17){
+//   if (isNaN(questionSeven)){
+//     questionSeven = parseInt(prompt('Please use numbers 0-9'));
+//   }else if (questionSeven < 17 ) {
+//     questionSeven = parseInt(prompt('Older than that, she\'s older than most highschoolers!'));
+//   }else if (questionSeven > 17 ) {
+//     questionSeven = parseInt(prompt('I really hope she lives that long, but she isn\'t there yet.'));
+//   }
+// }
+// alert('You got it! 17 is pretty old for a puppy don\'t you think?');
+ /*
+questionSeven
+My dog\(cocker spaniel\) at home is getting pretty old, How old would you guess she is?
+   A: 17 (Pretty old for a puppy don't you think?)
+   A: <17 (Older than that, she's older than most highschoolers!)
+   A: >17 (I really hope she lives that long, but she isn\'t there yet.)
 
-/* guessing game format;
-
-var questionOne= prompt ('');
-      questionOne = questionOne.toUpperCase();
-      console.log('this is the first value of questionOne ' + questionOne)
-
-        if(questionOne === 'Y'){
-          console.log('This is the if')
-          alert('' + userName + '');
-        } else {
-          console.log('this is the else')
-          alert ('' + userName + '');
-        };
-        */
+*/
