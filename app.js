@@ -1,4 +1,5 @@
 /*Note to self, Fix all spelling errors!*/
+
 /* userName */
 
 var userName = prompt('Let\'s get to know each other! What\'s your name?');
@@ -117,16 +118,6 @@ if (questionSeven === 17 && guessCounter <= 6){
   alert('Looks like the struggle is real, Callie is 17!');
 }
 
-/* So I'm not sure how to get the code to end with an alert letting the user know they ran out of guess. I thought having an else if statment that only looked at the var guesCounter I could end it that way
-I think I need to make a new if / else statment outside the while statement. something like:
-if(questionSeven !== 17 && guessCounter = 6 ){
-alert('Looks like the struggle is real, Callie is 17')
-}else{
-alert('Great Guess! 17 is pretty old for a puppy don\'t you think?')
-}
-but when I couldn't figure out how to get it to work...
-*/
-
 /* QuestionEight */
 
 var jeffOlympics = ['swimming','table tennis','ping pong','bicycling'];
@@ -155,15 +146,4 @@ alert('Welp, thats all ' + userName + ', thanks for playing! I hope you leanred 
 console.log('Full javascript was sucessfull');
 
 
-/*don't forget pseduo code/console.log()
-
-questionSeven
-My dog\(cocker spaniel\) at home is getting pretty old, How old would you guess she is?
-   A: 17 (Pretty old for a puppy don't you think?)
-   A: <17 (Older than that, she's older than most highschoolers!)
-   A: >17 (I really hope she lives that long, but she isn\'t there yet.)
-
-question 8
-Since I\'m making you guess things, what\'s one of my top three favorite (summer)olympic sports?
-  A = [swimming, table tennis, bicycling] (Great Job! swimming table tennis and bicycling are the only sports I bother to watch in the summer olympics.)
-  */
+/*don't forget pseduo code/console.log() */
