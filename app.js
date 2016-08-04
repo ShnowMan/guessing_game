@@ -4,6 +4,7 @@
 var userName = prompt('Let\'s get to know each other! What\'s your name?');
 console.log('userName = ' + userName);
 alert('Nice to meet\'cha ' + userName + '! Before you dig into my webpage, let\'s play a quick guessing game, shall we?');
+var answerCorrect = 0;
 
 /* QuestionOne */
 
@@ -12,6 +13,7 @@ console.log('questionOne = ' + questionOne);
 if(questionOne === 'Y' || questionOne === 'YES') {
   console.log('Q1 if');
   alert('You got it ' + userName + '! I take care of several diffrent animals at home!');
+  answerCorrect ++;
 } else {
   console.log('Q2 else');
   alert('Turns out, I love just about every animal on this planet. Even spiders, spiders are cool just so long as they aren\'t on me');
@@ -24,6 +26,7 @@ console.log('questionTwo = ' + questionTwo);
 if(questionTwo === 'N' || questionTwo === 'NO') {
   console.log('Q2 if');
   alert('You\'re right, I have acrophobia\(fear of heights\)!');
+  answerCorrect ++;
 } else {
   console.log('Q2 else');
   alert('Well, ' + userName + ' as you get to know me, you\'ll start to understand that my fear of hieghts prevents me from even considering crazy things like bungie jumping.');
@@ -36,6 +39,7 @@ console.log('questionThree = ' + questionThree);
 if (questionThree === 'N' || questionThree === 'NO') {
   console.log('Q3 if');
   alert('Glad to see we agree. Just thinking about that game, makes me want to play it.');
+  answerCorrect ++;
 }else{
   console.log('Q3 else');
   alert('While you\'re allowed to have an opnion, I don\'t agree with it ' + userName + '!' );
@@ -48,6 +52,7 @@ console.log('questionFour = ' + questionFour);
 if (questionFour === 'Y' || questionFour === 'YES'){
   console.log('Q4 if');
   alert('I think we can be friends! After all, pie is the holy grail of desserts');
+  answerCorrect ++;
 }else{
   console.log('Q4 else');
   alert('Oh, No. You\'re very wrong. Very wrong indeed. Nothing beats pie, cake is a lie!');
@@ -57,9 +62,10 @@ if (questionFour === 'Y' || questionFour === 'YES'){
 
 var questionFive = prompt('What sea animals do you think I fear?').toUpperCase();
 console.log('questionFive = ' + questionFive);
-if(questionFive === 'DOLPHINS' || questionFive === 'WHALES' || questionFive === 'PORPOISES' || questionFive === 'SNAKES' || questionFive === 'LION FISHS'){
+if(questionFive === 'DOLPHINS' || questionFive === 'WHALES' || questionFive === 'PORPOISES' || questionFive === 'SNAKES' || questionFive === 'LION FISHS' || questionFive === 'JELLYFISH'){
   console.log ('Q5 if');
   alert('You\'re right. Those things freak me out!');
+  answerCorrect ++;
 } else if (questionFive === 'SHARKS'){
   console.log ('Q5 if else');
   alert('Sharks are so misunderstood! I really want to spread awareness, sharks don\'t want to harm people. Most shark attacks are a case of mistaken identity');
@@ -81,6 +87,7 @@ if (jeffTopAnimals.indexOf(questionSix) === -1) {
   var answerToSix = jeffTopAnimals.indexOf(questionSix);
   console.log ('answerToSix = ' + answerToSix);
   alert('Great guess, ' + jeffTopAnimals[answerToSix] + ' is in my top five!' );
+  answerCorrect ++;
 }
 
 /* QuestionSeven */
@@ -101,12 +108,14 @@ while(questionSeven !== 17 && guessCounter < 6){
     console.log('Q7 if else (Older)');
     questionSeven = parseInt(prompt('I really hope she lives that long, but she isn\'t there yet.'));
     guessCounter ++;
-  }else if (guessCounter = 5){
-    console.log('Q7 if else (Counter < 5)');
-    alert('Looks like the struggle is real, Callie is 17!');
   }
 }
-alert('17 is pretty old for a puppy don\'t you think?');
+if (questionSeven === 17 && guessCounter <= 6){
+  alert('17 is pretty old for a puppy don\'t you think?');
+  answerCorrect ++;
+} else {
+  alert('Looks like the struggle is real, Callie is 17!');
+}
 
 /* So I'm not sure how to get the code to end with an alert letting the user know they ran out of guess. I thought having an else if statment that only looked at the var guesCounter I could end it that way
 I think I need to make a new if / else statment outside the while statement. something like:
@@ -129,15 +138,20 @@ for (var i = 0; i < jeffOlympics.length; i++){
   if (questionEight === jeffOlympics[i]){
     console.log('Q8 if');
     isTrue = true;
+    break;
   }
 }
 if (isTrue) {
   alert('Great Job! swimming, table tennis(ping pong), and bicycling are the only sports I bother to watch in the summer olympics.');
+  answerCorrect ++;
 } else {
   console.log('Q8 else');
-  alert('Sorry, but ' + questionEight + ' is not of the olympic games I watch, try again.');
+  alert('Sorry, but ' + questionEight + ' is not of the olympic games I watch.');
 }
-alert('Welp, thats all ' + userName + ', thanks for playing! I hope you leanred something aobut me.');
+
+/* Final Alert */
+
+alert('Welp, thats all ' + userName + ', thanks for playing! I hope you leanred something aobut me. By the way you got ' + answerCorrect + ' answers right!');
 console.log('Full javascript was sucessfull');
 
 
@@ -152,4 +166,4 @@ My dog\(cocker spaniel\) at home is getting pretty old, How old would you guess 
 question 8
 Since I\'m making you guess things, what\'s one of my top three favorite (summer)olympic sports?
   A = [swimming, table tennis, bicycling] (Great Job! swimming table tennis and bicycling are the only sports I bother to watch in the summer olympics.)
-*/
+  */
